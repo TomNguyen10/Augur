@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "../asset/logo.png";
 import NextImage from "next/image";
+import "./NavBar.css";
 
 const Navbar = () => {
   return (
