@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid #ccc;
+    /* Default border color */
+    padding: 10px;
+    /* Add padding for a better visual appearance */
+    transition: border-color 0.3s;
+    /* Add transition for a smooth effect */
+}
+
+.card:hover {
+    border-color: green;
+    border-left: 4px solid green;
+}
+
+.flex {
+    display: flex;
+}
+
+.card-list {
+    flex: 1;
+    /* Take remaining space */
+}
