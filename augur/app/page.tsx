@@ -7,11 +7,14 @@ import Ad3 from "./Advertisment/Ad3";
 import Ad4 from "./Advertisment/Ad4";
 import ProAd from "./ProAd/ProAd";
 import AugurComparisonTable from "./TableCompare/TableCompare";
+import Outtro from "./Outtro/Outtro";
+import CardSlider from "./CardSlider/CardSlider";
 
 const HomePage = () => {
   return (
     <div className="App">
       <Intro />
+      <CardSlider />
       <Product />
       <Ad1 />
       <Ad2 />
@@ -19,6 +22,7 @@ const HomePage = () => {
       <Ad4 />
       <ProAd />
       <AugurComparisonTable />
+      <Outtro />
     </div>
   );
 };

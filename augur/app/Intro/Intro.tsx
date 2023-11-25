@@ -6,21 +6,21 @@ interface IntroProps {}
 const Intro: React.FC<IntroProps> = () => {
   return (
     <div className="intro">
-      <section className="content-container">
-        <h1>Augur</h1>
-        <p>Your global, no-limit betting platform</p>
-        <p>
+      <div className="content-container">
+        <h1>Augur:</h1>
+        <h1>Your global, no-limit betting platform</h1>
+        <p className="text-customGray">
           Bet how much you want on sports, economics, world events and more.
         </p>
-        <div className="buttons-container">
-          <button className="sportsbook-button">
-            <h2>Augur Sportsbook</h2>
+        <div className="buttons-container gap-5">
+          <button className=" bg-customColor text-lg underline rounded-sm px-10 py-4 inline-block border hover:bg-white hover:text-customColor transition-all duration-300 ease-in-out uppercase">
+            Augur Sportsbook
           </button>
-          <button className="turbo-button">
-            <h2>Augur Turbo</h2>
+          <button className=" bg-customGreen text-lg text-customColor border-customGreen underline rounded-sm px-10 inline-block border hover:bg-white hover:text-customColor transition-all duration-300 ease-in-out uppercase">
+            Augur Turbo
           </button>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

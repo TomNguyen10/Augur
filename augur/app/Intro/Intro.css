@@ -3,16 +3,42 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #0e0e21;
 }
 
 .content-container {
   text-align: center;
 }
 
+h1 {
+  font-size: 3em;
+  color: #ffffff; /* Set the text color to white */
+}
+
+p {
+  font-size: 1em; /* Increase the font size for paragraphs */
+  color: #ffffff; /* Set the text color to white */
+  margin-bottom: 20px;
+}
+
 .buttons-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Add margin to separate the buttons from the text */
+  margin-top: 20px;
+}
+
+.sportsbook-button {
+  background-color: #0e0e21;
+  border: 4px solid white;
+}
+
+.sportsbook-button:hover {
+  color: #0e0e21;
+  background-color: white;
+}
+
+.turbo-button {
+  background-color: #2ae7a7;
 }
 
 .sportsbook-button,
@@ -21,7 +47,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 1.5rem;
@@ -29,9 +54,13 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: underline;
 }
 
-.sportsbook-button:hover,
-.turbo-button:hover {
+.sportsbook-button:hover {
   background-color: #0056b3;
+}
+
+.turbo-button:hover {
+  background-color: #007b4f; /* You can adjust this color as needed */
 }
