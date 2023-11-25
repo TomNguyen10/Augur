@@ -7,9 +7,31 @@
     /* Add transition for a smooth effect */
 }
 
+.card2{
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+}
+
 .card:hover {
     border-color: green;
     border-left: 4px solid green;
+}
+
+.effect:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+    /* Adjust the transition speed as needed */
+}
+
+.effect:hover:after {
+    width: 100%;
 }
 
 .flex {
