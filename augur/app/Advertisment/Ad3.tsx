@@ -42,23 +42,27 @@ const Ad3: React.FC = () => {
   };
 
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.messageBlock}>
-        <div style={styles.imageBlock}>
-          <NextImage src={Image} alt="Logo" width={300} height={300} />
+    <div className="bg-white text-black">
+      <div style={styles.wrapper}>
+        <div style={styles.messageBlock}>
+          <div style={styles.imageBlock}>
+            <NextImage src={Image} alt="Logo" width={300} height={300} />
+          </div>
         </div>
-      </div>
-      <div style={styles.messageBlock}>
-        <h1 style={styles.title}>Global Access</h1>
-        <p style={styles.body}>
-          Augur is a peer-to-peer, decentralized exchange, enabling universal
-          and transparent access to its markets.
-        </p>
-        <h2 style={styles.subtitle}>
-          "Augur is an open, global prediction market protocol that allows
-          anyone to create a market for anything. There is no single entity that
-          controls the protocol; it’s community-owned and operated."
-        </h2>
+        <div style={styles.messageBlock}>
+          <h1 style={styles.title} className="text-black">
+            Global Access
+          </h1>
+          <p style={styles.body} className="text-black">
+            Augur is a peer-to-peer, decentralized exchange, enabling universal
+            and transparent access to its markets.
+          </p>
+          <h2 style={styles.subtitle}>
+            "Augur is an open, global prediction market protocol that allows
+            anyone to create a market for anything. There is no single entity
+            that controls the protocol; it’s community-owned and operated."
+          </h2>
+        </div>
       </div>
     </div>
   );

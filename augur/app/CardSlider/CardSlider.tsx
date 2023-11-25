@@ -7,6 +7,8 @@ import mlbImage from "../asset/slider/mlb.png";
 import mmaImage from "../asset/slider/mma.png";
 import cryptoImage from "../asset/slider/crypto.png";
 import { StaticImageData } from "next/image";
+import { GrPrevious } from "react-icons/gr";
+import { GrNext } from "react-icons/gr";
 
 interface Card {
   name: string;
@@ -50,32 +52,34 @@ const CardSlider: React.FC = () => {
   const visibleIndices = [currentIndex, currentIndex + 1, currentIndex + 2];
 
   return (
-    <div className="slider-container">
-      <button onClick={handlePrev} className="slider-btn">
-        prev
-      </button>
-      <div className="slider">
-        <div
-          className="slider-inner"
-          style={{ transform: `translateX(${-currentIndex * 150}px)` }}>
-          {visibleIndices.map((index) => (
-            <div
-              key={index}
-              className="slide"
-              style={{ width: "1000px", marginRight: "10px" }}>
-              <NextImage
-                src={data[index].img}
-                alt={data[index].name}
-                width={150}
-                height={75}
-              />
-            </div>
-          ))}
+    <div className="relative h-80 bg-customColor">
+      <div className="slider-container">
+        <button onClick={handlePrev} className=" border bg-customColor p-2">
+          <GrPrevious />
+        </button>
+        <div className="slider">
+          <div
+            className="slider-inner"
+            style={{ transform: `translateX(${-currentIndex * 150}px)` }}>
+            {visibleIndices.map((index) => (
+              <div
+                key={index}
+                className="slide"
+                style={{ width: "1000px", marginRight: "10px" }}>
+                <NextImage
+                  src={data[index].img}
+                  alt={data[index].name}
+                  width={150}
+                  height={75}
+                />
+              </div>
+            ))}
+          </div>
         </div>
+        <button onClick={handleNext} className=" border bg-customColor p-2">
+          <GrNext />
+        </button>
       </div>
-      <button onClick={handleNext} className="slider-btn">
-        Next
-      </button>
     </div>
   );
 };

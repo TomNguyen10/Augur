@@ -1,44 +1,48 @@
 .card {
-    border: 1px solid #ccc;
-    /* Default border color */
-    padding: 10px;
-    /* Add padding for a better visual appearance */
-    transition: border-color 0.3s;
-    /* Add transition for a smooth effect */
+  border: 1px solid #ccc;
+  /* Default border color */
+  padding: 10px;
+  /* Add padding for a better visual appearance */
+  transition: border-color 0.3s;
+  /* Add transition for a smooth effect */
 }
 
-.card2{
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: block;
+.card2 {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
 }
 
 .card:hover {
-    border-color: green;
-    border-left: 4px solid green;
+  border-color: green;
+  border-left: 4px solid green;
 }
 
 .effect:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    bottom: 0;
-    transition: width 0.3s ease;
-    /* Adjust the transition speed as needed */
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+  /* Adjust the transition speed as needed */
 }
 
 .effect:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .card-list {
-    flex: 1;
-    /* Take remaining space */
+  flex: 1;
+  /* Take remaining space */
+}
+
+.mb-200 {
+  margin-bottom: 200px;
 }

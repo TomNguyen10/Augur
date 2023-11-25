@@ -35,7 +35,7 @@ const Ad1: React.FC = () => {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative bg-customColor">
       <div style={styles.wrapper}>
         <div style={styles.messageBlock}>
           <h1 style={styles.title}>Betting today is broken & exploitative.</h1>
@@ -54,15 +54,14 @@ const Ad1: React.FC = () => {
         <div style={styles.messageBlock}>
           <h2 style={styles.subtitle}>
             "Blockchain-based prediction markets may be the one force strong
-            enough to counterbalance the spread of incorrect information on social
-            media. They give people a financial incentive to seek the truth and
-            then protect them with the twin shields of pseudonymity and
-            decentralization."
+            enough to counterbalance the spread of incorrect information on
+            social media. They give people a financial incentive to seek the
+            truth and then protect them with the twin shields of pseudonymity
+            and decentralization."
           </h2>
         </div>
       </div>
     </div>
-    
   );
 };
 

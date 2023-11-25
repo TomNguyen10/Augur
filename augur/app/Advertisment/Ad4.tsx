@@ -46,17 +46,21 @@ const Ad4: React.FC = () => {
   };
 
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.messageBlock}>
-        <h1 style={styles.title}>Guaranteed payouts</h1>
-        <p style={styles.body}>
-          Augur is powered by Ethereum, which enables payouts to run as an
-          automated process that no person or organisation, including Augur, can
-          interfere with.
-        </p>
-      </div>
-      <div style={styles.imageBlock}>
-        <NextImage src={Image} alt="Logo" width={300} height={300} />
+    <div className="bg-white text-black">
+      <div style={styles.wrapper}>
+        <div style={styles.messageBlock}>
+          <h1 style={styles.title} className="text-black">
+            Guaranteed payouts
+          </h1>
+          <p style={styles.body} className="text-black">
+            Augur is powered by Ethereum, which enables payouts to run as an
+            automated process that no person or organisation, including Augur,
+            can interfere with.
+          </p>
+        </div>
+        <div style={styles.imageBlock}>
+          <NextImage src={Image} alt="Logo" width={300} height={300} />
+        </div>
       </div>
     </div>
   );

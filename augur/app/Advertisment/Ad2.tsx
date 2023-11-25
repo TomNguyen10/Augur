@@ -46,20 +46,22 @@ const Ad2: React.FC = () => {
   };
 
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.messageBlock}>
-        <h1 style={styles.title}>The best odds & the lowest fees.</h1>
-        <p style={styles.body}>
-          Users keep more of their winnings than any other exchange through low
-          fees and the best odds. Augur doesn’t take a cut.
-          <br />
-          "Augur is a substitute for betting platforms that charge high fees,
-          ban winners, delay withdrawals, freeze accounts, aren't globally
-          accessible, lack privacy, and don't let you sell your bet mid-game."
-        </p>
-      </div>
-      <div style={styles.imageBlock}>
-        <NextImage src={Image} alt="Logo" width={300} height={300} />
+    <div className="bg-customColor">
+      <div style={styles.wrapper}>
+        <div style={styles.messageBlock}>
+          <h1 style={styles.title}>The best odds & the lowest fees.</h1>
+          <p style={styles.body}>
+            Users keep more of their winnings than any other exchange through
+            low fees and the best odds. Augur doesn’t take a cut.
+            <br />
+            "Augur is a substitute for betting platforms that charge high fees,
+            ban winners, delay withdrawals, freeze accounts, aren't globally
+            accessible, lack privacy, and don't let you sell your bet mid-game."
+          </p>
+        </div>
+        <div style={styles.imageBlock}>
+          <NextImage src={Image} alt="Logo" width={300} height={300} />
+        </div>
       </div>
     </div>
   );
