@@ -35,31 +35,34 @@ const Ad1: React.FC = () => {
   };
 
   return (
-    <div style={styles.wrapper}>
-      <div style={styles.messageBlock}>
-        <h1 style={styles.title}>Betting today is broken & exploitative.</h1>
-        <br />
-        <br />
-        <p style={styles.body}>
-          Today’s betting Industry trades on promises of getting rich quick,
-          using every trick in the book to extract the maximum value from
-          customers.
+    <div className="relative h-screen">
+      <div style={styles.wrapper}>
+        <div style={styles.messageBlock}>
+          <h1 style={styles.title}>Betting today is broken & exploitative.</h1>
           <br />
           <br />
-          And at the same time, their best bettors are penalized by lowering
-          their limits and closing their accounts.
-        </p>
-      </div>
-      <div style={styles.messageBlock}>
-        <h2 style={styles.subtitle}>
-          "Blockchain-based prediction markets may be the one force strong
-          enough to counterbalance the spread of incorrect information on social
-          media. They give people a financial incentive to seek the truth and
-          then protect them with the twin shields of pseudonymity and
-          decentralization."
-        </h2>
+          <p style={styles.body}>
+            Today`s betting Industry trades on promises of getting rich quick,
+            using every trick in the book to extract the maximum value from
+            customers.
+            <br />
+            <br />
+            And at the same time, their best bettors are penalized by lowering
+            their limits and closing their accounts.
+          </p>
+        </div>
+        <div style={styles.messageBlock}>
+          <h2 style={styles.subtitle}>
+            "Blockchain-based prediction markets may be the one force strong
+            enough to counterbalance the spread of incorrect information on social
+            media. They give people a financial incentive to seek the truth and
+            then protect them with the twin shields of pseudonymity and
+            decentralization."
+          </h2>
+        </div>
       </div>
     </div>
+    
   );
 };
 

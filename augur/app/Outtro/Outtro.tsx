@@ -13,12 +13,12 @@ const Outtro: React.FC<OuttroProps> = () => {
         <div>
           <h1>Global Access.</h1>
         </div>
-        <div className="buttons-container">
-          <button className="sportsbook-button">
-            <h2>Augur Sportsbook</h2>
+        <div className="buttons-container gap-5">
+          <button className=" bg-customColor text-lg underline rounded-sm px-10 py-4 inline-block border hover:bg-white hover:text-customColor transition-all duration-300 ease-in-out uppercase">
+            Augur Sportsbook
           </button>
-          <button className="turbo-button">
-            <h2>Augur Turbo</h2>
+          <button className=" bg-customGreen text-lg text-customColor border-customGreen underline rounded-sm px-10 inline-block border hover:bg-white hover:text-customColor transition-all duration-300 ease-in-out uppercase">
+            Augur Turbo
           </button>
         </div>
         <div>

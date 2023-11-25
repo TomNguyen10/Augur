@@ -17,6 +17,7 @@ const config: Config = {
         customColor: "#0e0e21", // Replace with your desired color code
         customGreen: "#2ae7a7",
         customGray: "#9c9cb4",
+        customBlue: "#16162a",
       },
     },
   },

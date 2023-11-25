@@ -45,20 +45,23 @@ const AugurComparisonTable: React.FC<AugurComparisonTableProps> = ({
   };
 
   return (
-    <div className={`flex justify-center items-center h-screen ${className}`}>
-      <table className="border-collapse border border-gray-300">
-        <thead>
-          <tr>
-            {tabs.map((tab) => (
-              <th key={tab} className="bg-blue-500 text-white py-2 px-4">
-                {tab}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>{renderTableRows()}</tbody>
-      </table>
+    <div className="bg-white text-customColor">
+      <div className={`flex justify-center items-center h-screen ${className}`}>
+        <table className="border-collapse border border-gray-300">
+          <thead>
+            <tr>
+              {tabs.map((tab) => (
+                <th key={tab} className="bg-blue-500 text-white py-2 px-4">
+                  {tab}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>{renderTableRows()}</tbody>
+        </table>
+      </div>
     </div>
+   
   );
 };
 
